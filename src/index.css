@@ -8,5 +8,185 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   min-height: 100%;
+  background-color: #f8f9fa;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  background-color: rgba(254, 254, 254, 0.8);
+  border-bottom: 0.1rem solid #d5d6d6;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+nav li {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.brand {
+  margin-left: 0.2rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.home {
+  color: #858b91;
+}
+
+.last {
+  margin-left: auto;
+  padding-left: 0;
+}
+
+.hover:hover {
+  text-decoration: underline;
+}
+
+.hide:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 100%;
+  margin-top: 5rem;
+}
+
+/* article {
+  height: 50vh;
+} */
+
+.card {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.3rem;
+}
+
+.card img {
+  border: 0.08rem solid #e1e4e8;
+  border-radius: 0.3rem;
+  width: 100%;
+}
+
+p {
+  font-size: 0.8rem;
+  font-weight: thinner;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #f8f9fa;
+  font-size: 0.8rem;
+  text-align: left;
+  padding-bottom: 2.1rem;
+  margin-left: 1.5rem;
+}
+
+footer hr {
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  color: #858b91;
+}
+
+@media (max-width: 768px) {
+  .hide {
+    display: none;
+  }
+}
+
+@media (min-width: 545px) {
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    margin-top: 6rem;
+  }
+
+  .card {
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo {
+    padding: 1rem 0;
+  }
+}
+
+@media (min-width: 1010px) {
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 1rem;
+  }
+
+  .logo {
+    padding: 1rem 0;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1240px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 22.5%);
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 1rem;
+    margin: 6rem 2.5rem;
+  }
+
+  .card {
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1500px) {
+  main {
+    margin: 6rem 10rem;
+  }
 }

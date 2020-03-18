@@ -1,8 +1,20 @@
 import React, { Component } from 'react'
-import HelloWorld from './components/HelloWorld'
+import Octocats from './components/Octocats'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
 
-const App = () => {
-  return <HelloWorld />
+class App extends Component {
+  render() {
+    return (
+      <>
+        <Nav />
+
+        <Octocats />
+
+        <Footer />
+      </>
+    )
+  }
 }
 
 export default App
