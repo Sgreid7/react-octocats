@@ -9,9 +9,9 @@ export class Card extends Component {
           <p>
             {this.props.number} <span>{this.props.name}</span>
           </p>
-        </div>
-        <div>
-          <i class="fa fa-github fa-2x"></i>
+          <div>
+            <i class="fa fa-github fa-2x"></i>
+          </div>
         </div>
       </section>
     )
